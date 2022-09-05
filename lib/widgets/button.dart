@@ -23,7 +23,8 @@ class CalculatorButton extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     final buttonStyle = TextButton.styleFrom(
-
+       foregroundColor: Colors.white, backgroundColor: this.bgColor,
+        shape: StadiumBorder(),
     );
     return Container(
         margin: EdgeInsets.only(bottom: 10, right: 5,left: 5),
