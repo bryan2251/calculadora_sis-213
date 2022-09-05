@@ -12,5 +12,20 @@ class CalculadoraState {
     this.secondNumber = '20', 
     this.operation = '+'
   });
+
+  CalculadoraState copyWith({
+    String? mathResult,
+    String? firstNumber,
+    String? secondNumber,
+    String? operation,
+    
+  }) => CalculadoraState(
+    mathResult: mathResult ?? this.mathResult,
+    firstNumber: firstNumber ?? this.firstNumber,
+    secondNumber: secondNumber ?? this.secondNumber,
+    operation: operation ?? this.operation,
+    
+  );
+
 }
 
